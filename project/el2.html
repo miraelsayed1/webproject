@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="english.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <title>English</title>
+  
+</head>
+<body>
+ 
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> English Levels</h2>
+        <nav>
+          <ul>
+            <li ><a href="english.html">L1</a></li>
+            <li class="current"><a href="el2.html">L2</a></li>
+            <li ><a href="el3.html">L3</a></li>
+            <li ><a href="el4.html">L4</a></li>
+            <li><a href="index.html">Home</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <section class="draggable-elements">
+    <i class="fas fa-running draggable" draggable="true" style="color: red;" id="running"></i>
+    <i class="fas fa-skiing draggable" draggable="true" style="color: blue;" id="skiing"></i>
+    <i class="fas fa-swimmer draggable" draggable="true" style="color: orange" id="swimmer"></i>
+    <i class="fas fa-basketball-ball draggable" draggable="true" style="color: green;" id="basketball-ball"></i>
+    <i class="fas fa-soccer-ball-o draggable" draggable="true" style="color: pink;" id="soccer-ball-o"></i>
+    
+  </section>
+  <section class="droppable-elements">
+    <div class="droppable" data-draggable-id="swimmer"><span>Swim</span></div>
+    <div class="droppable" data-draggable-id="running"><span>Run</span></div>
+    <div class="droppable" data-draggable-id="skiing"><span>Skii</span></div>
+    <div class="droppable" data-draggable-id="soccer-ball-o"><span>Football</span></div>
+    <div class="droppable" data-draggable-id="basketball-ball"><span>Basketball</span></div>
+    
+  </section>
+
+
+  <script src="el2.js"></script>
+  
+</body>
+</html>

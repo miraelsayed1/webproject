@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+        font-family: 'Luckiest Guy', cursive;
+        background-color: #E6E6EA;
+        justify-items: center;
+        padding: 0;
+    
+}
+header{
+    background: #FE4A49;
+  }
+
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+  
+  .nav{
+    overflow: hidden;
+    background:#FE4A49;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .nav h2{
+    font-size: 2rem;
+    float: left;
+  }
+  
+  nav{
+    float: right;
+  }
+  
+  nav ul{
+    list-style-type: none;
+  }
+  
+  nav li{
+    font-size: 1.3rem;
+    margin-top: 5px;
+    float: left;
+    padding: 0 15px;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .current a::after{
+    content: '-';
+    font-size: 4px;
+    background-color: white;
+    display: block;
+  }
+  
+
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container_1 {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0 0 10px 2px;
+    align-items: center;
+    margin: 100px;
+
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
